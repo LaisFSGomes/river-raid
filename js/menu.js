@@ -1,5 +1,3 @@
-const { write } = require("fs");
-
 function Menu() {
     const menu = getElementSelector('#menu-container');
     const menuTitle = getElementSelector('#title-menu');
@@ -17,9 +15,10 @@ function Menu() {
       });
     }
   
+    
     button.addEventListener('click', (event) => {
       if (game.gameover) {
-        changeZindex(menu, -1);
+        // changeZindex(menu, -1);
   
         const windowGame = document.getElementById('window-game');
         removeChildren(windowGame);
@@ -34,7 +33,7 @@ function Menu() {
         changeZindex(menu, 2);
         writeOnElement(menuTitle, 'Game Over');
         writeOnElement(button, 'restart');
-        writeOnElement(finalSituation, `${game.getSituation().toString} points `);
+        // writeOnElement(finalSituation, `${game.getSituation().toString} points `);
         
       }
     }, 20);
