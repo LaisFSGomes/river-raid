@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#menu-container {
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/naruto-background.jpg");
+    background-size: cover;
+    position: fixed;
+} 
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: 600;
+    color: #b51c2e;
+    width: 500px;
+    height: 300px;
+}
+#title-menu, #result {
+    text-align: center;
+    font-size: 4rem;
+}
+.button {
+    align-self: flex-end;
+    margin-bottom: 200px;
+    margin-left: 100px;
+    font-size: 20px;
+    background-color: white;
+    color: #FF9432;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: none;
+}
+.button:hover {
+    border: none;
+    color: white;
+    background-color: #db7311;
+}
+
+
+#game-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #FF9432;
+    width: 100vw;
+    height: 100vh;
+}
+
+#game {
+    position: relative;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#window-game {
+    grid-row: 2;
+    grid-column: 2/3;
+    position: relative;
+    width: 900px;
+    height: 500px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+.naruto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    left: 45%;
+}
+.obstacle-line {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+}
+.obstacle {
+    background-image: url("../img/background-akatsuki.jpg");
+    height: 50%;
+}
+
+.progress {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 80px;
+    z-index: 1;
+}
+
+.narutoImg {
+    width: 100px;
+}
+
